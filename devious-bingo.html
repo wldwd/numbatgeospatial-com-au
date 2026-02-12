@@ -96,6 +96,8 @@
 
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        min-width: 0;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -111,12 +113,16 @@
         font-weight: 600;
         font-size: 0.95rem;
         margin-bottom: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .cell-def {
         font-size: 0.7rem;
         font-weight: 300;
         opacity: 0.6;
         line-height: 1.3;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .cell:hover {
         background: color-mix(in srgb, var(--accent) 10%, transparent);
